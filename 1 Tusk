@@ -1,9 +1,9 @@
-def text(L: str)->str:
-    return(L)
+def text(a,b,c:int)->int:
+    return(a*b*c)
 
 
 def main():
-    print(text("Текст"))
+    print(text(2,4,6))
     
 
 
