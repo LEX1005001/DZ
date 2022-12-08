@@ -1,9 +1,16 @@
-def text(a,b,c:int)->int:
-    return(a*b*c)
+def text(a,b,c:int,sim:str)->float: # (*, /, +, -)
+    if sim=="*":
+        return(a*b*c)
+    elif sim=="/":
+        return(a/b/c)
+    elif sim=="+":
+        return(a+b+c)
+    elif sim=="-":
+        return(a-b-c)
 
 
 def main():
-    print(text(2,4,6))
+    print(text(2,4,6,"+"))
     
 
 
